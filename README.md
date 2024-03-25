@@ -16,7 +16,7 @@ sudo ovs-vsctl set interface eth1 lldp:enable=true
 ### Controllers
 - Set a controller to out of band on a bridge named _ovs-br_:
 ```
-sudo ovs-vsctl set controller faucet connection-mode=out-of-band
+sudo ovs-vsctl set controller ovs-br connection-mode=out-of-band
 ```
 
 ### Bridges
