@@ -28,6 +28,12 @@ sudo ovs-vsctl set bridge ovs-br other-config:datapath-id=0000000000000001
 ```
 sudo ovs-ofctl -O OpenFlow13 show ovs-br
 ```
+
+OR
+
+```
+ovs-vsctl list bridge ovs-br
+```
 - Set OpenFlow version of a bridge named _ovs-br_:
 ```
 ovs-vsctl set bridge ovs-br protocols=OpenFlow13
